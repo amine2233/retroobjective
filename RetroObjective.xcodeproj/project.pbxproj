@@ -14,6 +14,22 @@
 		67F5629923D6D62B0070E964 /* RetroObjective.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F5629723D6D62B0070E964 /* RetroObjective.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F5629A23D6D62B0070E964 /* RetroObjective.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F5629723D6D62B0070E964 /* RetroObjective.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F5629B23D6D62B0070E964 /* RetroObjective.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F5629723D6D62B0070E964 /* RetroObjective.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F562A623D6D9440070E964 /* DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562A423D6D9440070E964 /* DelegateProxy.h */; };
+		67F562A723D6D9440070E964 /* DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562A423D6D9440070E964 /* DelegateProxy.h */; };
+		67F562A823D6D9440070E964 /* DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562A423D6D9440070E964 /* DelegateProxy.h */; };
+		67F562A923D6D9440070E964 /* DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562A423D6D9440070E964 /* DelegateProxy.h */; };
+		67F562AA23D6D9440070E964 /* DelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562A523D6D9440070E964 /* DelegateProxy.m */; };
+		67F562AB23D6D9440070E964 /* DelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562A523D6D9440070E964 /* DelegateProxy.m */; };
+		67F562AC23D6D9440070E964 /* DelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562A523D6D9440070E964 /* DelegateProxy.m */; };
+		67F562AD23D6D9440070E964 /* DelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562A523D6D9440070E964 /* DelegateProxy.m */; };
+		67F562B023D6D9E70070E964 /* RORuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562AE23D6D9E70070E964 /* RORuntime.h */; };
+		67F562B123D6D9E70070E964 /* RORuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562AE23D6D9E70070E964 /* RORuntime.h */; };
+		67F562B223D6D9E70070E964 /* RORuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562AE23D6D9E70070E964 /* RORuntime.h */; };
+		67F562B323D6D9E70070E964 /* RORuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562AE23D6D9E70070E964 /* RORuntime.h */; };
+		67F562B423D6D9E70070E964 /* RORuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562AF23D6D9E70070E964 /* RORuntime.m */; };
+		67F562B523D6D9E70070E964 /* RORuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562AF23D6D9E70070E964 /* RORuntime.m */; };
+		67F562B623D6D9E70070E964 /* RORuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562AF23D6D9E70070E964 /* RORuntime.m */; };
+		67F562B723D6D9E70070E964 /* RORuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562AF23D6D9E70070E964 /* RORuntime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +73,10 @@
 		67F5629D23D6D6380070E964 /* Info-iOSTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOSTests.plist"; sourceTree = "<group>"; };
 		67F5629E23D6D6380070E964 /* Info-macOSTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOSTests.plist"; sourceTree = "<group>"; };
 		67F5629F23D6D82C0070E964 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		67F562A423D6D9440070E964 /* DelegateProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateProxy.h; sourceTree = "<group>"; };
+		67F562A523D6D9440070E964 /* DelegateProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateProxy.m; sourceTree = "<group>"; };
+		67F562AE23D6D9E70070E964 /* RORuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RORuntime.h; sourceTree = "<group>"; };
+		67F562AF23D6D9E70070E964 /* RORuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RORuntime.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +175,10 @@
 			isa = PBXGroup;
 			children = (
 				67F5629723D6D62B0070E964 /* RetroObjective.h */,
+				67F562A423D6D9440070E964 /* DelegateProxy.h */,
+				67F562A523D6D9440070E964 /* DelegateProxy.m */,
+				67F562AE23D6D9E70070E964 /* RORuntime.h */,
+				67F562AF23D6D9E70070E964 /* RORuntime.m */,
 			);
 			path = RetroObjective;
 			sourceTree = "<group>";
@@ -184,6 +208,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F562B023D6D9E70070E964 /* RORuntime.h in Headers */,
+				67F562A623D6D9440070E964 /* DelegateProxy.h in Headers */,
 				67F5629823D6D62B0070E964 /* RetroObjective.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +218,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F562B123D6D9E70070E964 /* RORuntime.h in Headers */,
+				67F562A723D6D9440070E964 /* DelegateProxy.h in Headers */,
 				67F5629923D6D62B0070E964 /* RetroObjective.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +228,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F562B223D6D9E70070E964 /* RORuntime.h in Headers */,
+				67F562A823D6D9440070E964 /* DelegateProxy.h in Headers */,
 				67F5629A23D6D62B0070E964 /* RetroObjective.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +238,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F562B323D6D9E70070E964 /* RORuntime.h in Headers */,
+				67F562A923D6D9440070E964 /* DelegateProxy.h in Headers */,
 				67F5629B23D6D62B0070E964 /* RetroObjective.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +490,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F562AA23D6D9440070E964 /* DelegateProxy.m in Sources */,
+				67F562B423D6D9E70070E964 /* RORuntime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +506,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F562AB23D6D9440070E964 /* DelegateProxy.m in Sources */,
+				67F562B523D6D9E70070E964 /* RORuntime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +515,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F562AC23D6D9440070E964 /* DelegateProxy.m in Sources */,
+				67F562B623D6D9E70070E964 /* RORuntime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +531,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F562AD23D6D9440070E964 /* DelegateProxy.m in Sources */,
+				67F562B723D6D9E70070E964 /* RORuntime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
