@@ -9,11 +9,13 @@
 #import "RORuntime.h"
 
 BOOL RO_isMethodReturnTypeVoid(struct objc_method_description method) {
+    //DOC: https://www.tutorialspoint.com/c_standard_library/c_function_strncmp.htm
     return strncmp(method.types, @encode(void), 1) == 0;
 }
 
 BOOL RO_isMethodSignatureVoid(NSMethodSignature * _Nonnull methodSignature) {
     const char *methodReturnType = methodSignature.methodReturnType;
+    //DOC: https://www.tutorialspoint.com/c_standard_library/c_function_strcmp.htm
     return strcmp(methodReturnType, @encode(void)) == 0;
 }
 
