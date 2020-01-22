@@ -10,6 +10,17 @@
 
 @implementation DelegateProxy
 
++ (void)initialize
+{
+    if (self == [DelegateProxy class]) {
+        [DelegateProxy initializer];
+    }
+}
+
++ (void)initializer {
+    
+}
+
 - (void)interceptedSelector:(SEL)selector arguments:(NSArray *)arguments
 {
     NSAssert(NO, @"Abstract method");

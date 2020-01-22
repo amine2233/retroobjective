@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67744F2023D8212B00639942 /* Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F1F23D8212B00639942 /* Arguments.swift */; };
+		67744F2123D8212B00639942 /* Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F1F23D8212B00639942 /* Arguments.swift */; };
+		67744F2223D8212B00639942 /* Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F1F23D8212B00639942 /* Arguments.swift */; };
+		67744F2323D8212B00639942 /* Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F1F23D8212B00639942 /* Arguments.swift */; };
+		67744F2523D8224900639942 /* RetroObjectiveProxyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F2423D8224900639942 /* RetroObjectiveProxyType.swift */; };
+		67744F2623D8224900639942 /* RetroObjectiveProxyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F2423D8224900639942 /* RetroObjectiveProxyType.swift */; };
+		67744F2723D8224900639942 /* RetroObjectiveProxyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F2423D8224900639942 /* RetroObjectiveProxyType.swift */; };
+		67744F2823D8224900639942 /* RetroObjectiveProxyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F2423D8224900639942 /* RetroObjectiveProxyType.swift */; };
+		67744F2A23D8231100639942 /* RetroObjectiveProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F2923D8231100639942 /* RetroObjectiveProxy.swift */; };
+		67744F2B23D8231100639942 /* RetroObjectiveProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F2923D8231100639942 /* RetroObjectiveProxy.swift */; };
+		67744F2C23D8231100639942 /* RetroObjectiveProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F2923D8231100639942 /* RetroObjectiveProxy.swift */; };
+		67744F2D23D8231100639942 /* RetroObjectiveProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F2923D8231100639942 /* RetroObjectiveProxy.swift */; };
+		67744F2F23D8248F00639942 /* Receivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F2E23D8248F00639942 /* Receivable.swift */; };
+		67744F3023D8248F00639942 /* Receivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F2E23D8248F00639942 /* Receivable.swift */; };
+		67744F3123D8248F00639942 /* Receivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F2E23D8248F00639942 /* Receivable.swift */; };
+		67744F3223D8248F00639942 /* Receivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F2E23D8248F00639942 /* Receivable.swift */; };
+		67744F3423D8250700639942 /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F3323D8250700639942 /* Receiver.swift */; };
+		67744F3523D8250700639942 /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F3323D8250700639942 /* Receiver.swift */; };
+		67744F3623D8250700639942 /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F3323D8250700639942 /* Receiver.swift */; };
+		67744F3723D8250700639942 /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67744F3323D8250700639942 /* Receiver.swift */; };
 		67F5623C23D6D48A0070E964 /* RetroObjective.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F5623223D6D48A0070E964 /* RetroObjective.framework */; };
 		67F5626523D6D4A10070E964 /* RetroObjective.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F5625C23D6D4A10070E964 /* RetroObjective.framework */; };
 		67F5628123D6D4B00070E964 /* RetroObjective.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F5627823D6D4B00070E964 /* RetroObjective.framework */; };
@@ -14,18 +34,18 @@
 		67F5629923D6D62B0070E964 /* RetroObjective.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F5629723D6D62B0070E964 /* RetroObjective.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F5629A23D6D62B0070E964 /* RetroObjective.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F5629723D6D62B0070E964 /* RetroObjective.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F5629B23D6D62B0070E964 /* RetroObjective.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F5629723D6D62B0070E964 /* RetroObjective.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67F562A623D6D9440070E964 /* DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562A423D6D9440070E964 /* DelegateProxy.h */; };
-		67F562A723D6D9440070E964 /* DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562A423D6D9440070E964 /* DelegateProxy.h */; };
-		67F562A823D6D9440070E964 /* DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562A423D6D9440070E964 /* DelegateProxy.h */; };
-		67F562A923D6D9440070E964 /* DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562A423D6D9440070E964 /* DelegateProxy.h */; };
+		67F562A623D6D9440070E964 /* DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562A423D6D9440070E964 /* DelegateProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F562A723D6D9440070E964 /* DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562A423D6D9440070E964 /* DelegateProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F562A823D6D9440070E964 /* DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562A423D6D9440070E964 /* DelegateProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F562A923D6D9440070E964 /* DelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562A423D6D9440070E964 /* DelegateProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F562AA23D6D9440070E964 /* DelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562A523D6D9440070E964 /* DelegateProxy.m */; };
 		67F562AB23D6D9440070E964 /* DelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562A523D6D9440070E964 /* DelegateProxy.m */; };
 		67F562AC23D6D9440070E964 /* DelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562A523D6D9440070E964 /* DelegateProxy.m */; };
 		67F562AD23D6D9440070E964 /* DelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562A523D6D9440070E964 /* DelegateProxy.m */; };
-		67F562B023D6D9E70070E964 /* RORuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562AE23D6D9E70070E964 /* RORuntime.h */; };
-		67F562B123D6D9E70070E964 /* RORuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562AE23D6D9E70070E964 /* RORuntime.h */; };
-		67F562B223D6D9E70070E964 /* RORuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562AE23D6D9E70070E964 /* RORuntime.h */; };
-		67F562B323D6D9E70070E964 /* RORuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562AE23D6D9E70070E964 /* RORuntime.h */; };
+		67F562B023D6D9E70070E964 /* RORuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562AE23D6D9E70070E964 /* RORuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F562B123D6D9E70070E964 /* RORuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562AE23D6D9E70070E964 /* RORuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F562B223D6D9E70070E964 /* RORuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562AE23D6D9E70070E964 /* RORuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F562B323D6D9E70070E964 /* RORuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F562AE23D6D9E70070E964 /* RORuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F562B423D6D9E70070E964 /* RORuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562AF23D6D9E70070E964 /* RORuntime.m */; };
 		67F562B523D6D9E70070E964 /* RORuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562AF23D6D9E70070E964 /* RORuntime.m */; };
 		67F562B623D6D9E70070E964 /* RORuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F562AF23D6D9E70070E964 /* RORuntime.m */; };
@@ -57,6 +77,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67744F1F23D8212B00639942 /* Arguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arguments.swift; sourceTree = "<group>"; };
+		67744F2423D8224900639942 /* RetroObjectiveProxyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroObjectiveProxyType.swift; sourceTree = "<group>"; };
+		67744F2923D8231100639942 /* RetroObjectiveProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroObjectiveProxy.swift; sourceTree = "<group>"; };
+		67744F2E23D8248F00639942 /* Receivable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receivable.swift; sourceTree = "<group>"; };
+		67744F3323D8250700639942 /* Receiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receiver.swift; sourceTree = "<group>"; };
 		67F5623223D6D48A0070E964 /* RetroObjective.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RetroObjective.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F5623B23D6D48A0070E964 /* RetroObjectiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroObjectiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F5624F23D6D4960070E964 /* RetroObjective.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RetroObjective.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +204,11 @@
 				67F562A523D6D9440070E964 /* DelegateProxy.m */,
 				67F562AE23D6D9E70070E964 /* RORuntime.h */,
 				67F562AF23D6D9E70070E964 /* RORuntime.m */,
+				67744F1F23D8212B00639942 /* Arguments.swift */,
+				67744F2923D8231100639942 /* RetroObjectiveProxy.swift */,
+				67744F2423D8224900639942 /* RetroObjectiveProxyType.swift */,
+				67744F2E23D8248F00639942 /* Receivable.swift */,
+				67744F3323D8250700639942 /* Receiver.swift */,
 			);
 			path = RetroObjective;
 			sourceTree = "<group>";
@@ -490,8 +520,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67744F2023D8212B00639942 /* Arguments.swift in Sources */,
+				67744F3423D8250700639942 /* Receiver.swift in Sources */,
 				67F562AA23D6D9440070E964 /* DelegateProxy.m in Sources */,
+				67744F2A23D8231100639942 /* RetroObjectiveProxy.swift in Sources */,
+				67744F2F23D8248F00639942 /* Receivable.swift in Sources */,
 				67F562B423D6D9E70070E964 /* RORuntime.m in Sources */,
+				67744F2523D8224900639942 /* RetroObjectiveProxyType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,8 +541,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67744F2123D8212B00639942 /* Arguments.swift in Sources */,
+				67744F3523D8250700639942 /* Receiver.swift in Sources */,
 				67F562AB23D6D9440070E964 /* DelegateProxy.m in Sources */,
+				67744F2B23D8231100639942 /* RetroObjectiveProxy.swift in Sources */,
+				67744F3023D8248F00639942 /* Receivable.swift in Sources */,
 				67F562B523D6D9E70070E964 /* RORuntime.m in Sources */,
+				67744F2623D8224900639942 /* RetroObjectiveProxyType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,8 +555,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67744F2223D8212B00639942 /* Arguments.swift in Sources */,
+				67744F3623D8250700639942 /* Receiver.swift in Sources */,
 				67F562AC23D6D9440070E964 /* DelegateProxy.m in Sources */,
+				67744F2C23D8231100639942 /* RetroObjectiveProxy.swift in Sources */,
+				67744F3123D8248F00639942 /* Receivable.swift in Sources */,
 				67F562B623D6D9E70070E964 /* RORuntime.m in Sources */,
+				67744F2723D8224900639942 /* RetroObjectiveProxyType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,8 +576,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67744F2323D8212B00639942 /* Arguments.swift in Sources */,
+				67744F3723D8250700639942 /* Receiver.swift in Sources */,
 				67F562AD23D6D9440070E964 /* DelegateProxy.m in Sources */,
+				67744F2D23D8231100639942 /* RetroObjectiveProxy.swift in Sources */,
+				67744F3223D8248F00639942 /* Receivable.swift in Sources */,
 				67F562B723D6D9E70070E964 /* RORuntime.m in Sources */,
+				67744F2823D8224900639942 /* RetroObjectiveProxyType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,6 +785,7 @@
 		67F5624823D6D48A0070E964 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -807,6 +858,7 @@
 		67F5624923D6D48A0070E964 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1183,6 +1235,7 @@
 		67F5627123D6D4A10070E964 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1255,6 +1308,7 @@
 		67F5627223D6D4A10070E964 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1474,6 +1528,7 @@
 		67F5628D23D6D4B00070E964 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1546,6 +1601,7 @@
 		67F5628E23D6D4B00070E964 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

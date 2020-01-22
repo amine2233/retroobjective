@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "DelegateProxy.h"
+#import "RORuntime.h"
 
 //! Project version number for RetroObjective.
 FOUNDATION_EXPORT double RetroObjective_VersionNumber;
