@@ -16,6 +16,7 @@ open class RetroObjectiveProxy: DelegateProxy {
     fileprivate var receivables: [Selector: Receivable] = [:]
 
     public required override init() {
+        RetroObjectiveProxy.initializer()
         super.init()
         let result = pthread_mutex_init(&mutex, nil)
         precondition(result == 0, "Failed ti initialize mutex on \(self): \(result).")
@@ -28,15 +29,15 @@ open class RetroObjectiveProxy: DelegateProxy {
 }
 
 public extension RetroObjectiveProxy {
-    override class func initializer() {
+    class func initializer() {
         lock(); defer { unlock() }
 
-        func collectSelectors(fromClass `class`: AnyClass) -> Set<Selector> {
+        func collectSelectors(fromClass aClass: AnyClass) -> Set<Selector> {
             var protocolsCount: UInt32 = 0
-            guard let protocolPointer = class_copyProtocolList(`class`, &protocolsCount) else { return .init() }
+            guard let protocolPointer = class_copyProtocolList(aClass, &protocolsCount) else { return .init() }
             let selectors = self.collectSelectors(fromProtocolPointer: protocolPointer, count: Int(protocolsCount))
 
-            guard let superClass = class_getSuperclass(`class`) else { return selectors }
+            guard let superClass = class_getSuperclass(aClass) else { return selectors }
             return selectors.union(collectSelectors(fromClass: superClass))
         }
 

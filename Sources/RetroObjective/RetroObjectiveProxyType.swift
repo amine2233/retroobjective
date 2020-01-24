@@ -15,8 +15,8 @@ public protocol RetroObjectiveProxyType: class {
     func resetRetroObjectiveProxyType(owner: Owner)
 }
 
-public extension RetroObjectiveProxyType where Self: RetroObjectiveProxy {
-    static func proxy(for owner: Owner) -> Self {
+extension RetroObjectiveProxyType where Self: RetroObjectiveProxy {
+    public static func proxy(for owner: Owner) -> Self {
         lock(); defer { unlock() }
 
         let delegateProxy: Self
