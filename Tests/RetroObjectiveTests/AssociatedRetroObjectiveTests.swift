@@ -32,7 +32,7 @@ final class AssociatedRetroObjectiveTests: XCTestCase {
         tester.sendIntEvent(10)
         XCTAssertEqual(value, 10)
 
-        tester.sendIntEvent(15)
+        tester.sendIntEvent(5)
         XCTAssertEqual(value, 15)
     }
 }

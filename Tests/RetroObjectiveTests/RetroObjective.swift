@@ -7,12 +7,12 @@
 
 import RetroObjective
 
-@objc protocol TestDelegate {
+@objc protocol TestDelegate: class {
     @objc optional func intEvent(_ value: Int)
 }
 
 @objc protocol TestInheritedDelegate: TestDelegate {
-    func boolEvent(_ value: Bool)
+    @objc optional func boolEvent(_ value: Bool)
 }
 
 final class DelegateTester: NSObject {
@@ -31,18 +31,23 @@ final class InheritedDelegateTester: NSObject {
     }
 
     func sendBoolEvent(_ value: Bool) {
-        delegate?.boolEvent(value)
+        delegate?.boolEvent!(value)
     }
 }
 
 final class TestDelegateProxy: RetroObjectiveProxy, TestDelegate, RetroObjectiveProxyType {
-
     func resetRetroObjectiveProxyType(owner: DelegateTester) {
         owner.delegate = self
     }
 }
 
-final class DelegateImplementedProxy: DelegateProxy, TestDelegate {
+final class TestInheritedDelegateProxy: RetroObjectiveProxy, TestInheritedDelegate, RetroObjectiveProxyType {
+    func resetRetroObjectiveProxyType(owner: InheritedDelegateTester) {
+        owner.delegate = self
+    }
+}
+
+final class DelegateImplementedProxy: RetroObjectiveProxy, TestDelegate {
     private(set) var receivedValues = [Int]()
 
     func intEvent(_ value: Int) {

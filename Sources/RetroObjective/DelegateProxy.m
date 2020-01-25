@@ -7,6 +7,7 @@
 
 #import "DelegateProxy.h"
 #import "RORuntime.h"
+#import <objc/runtime.h>
 
 @implementation DelegateProxy
 

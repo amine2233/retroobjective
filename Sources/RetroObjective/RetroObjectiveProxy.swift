@@ -7,29 +7,15 @@
 
 import Foundation
 
-open class RetroObjectiveProxy: DelegateProxy {
+protocol InitializerProtocol: class {
+    static var classSelectors: [NSValue: Set<Selector>] { get set }
 
-    fileprivate static var classSelectors: [NSValue: Set<Selector>] = [:]
-
-    fileprivate var mutex = pthread_mutex_t()
-
-    fileprivate var receivables: [Selector: Receivable] = [:]
-
-    public required override init() {
-        RetroObjectiveProxy.initializer()
-        super.init()
-        let result = pthread_mutex_init(&mutex, nil)
-        precondition(result == 0, "Failed ti initialize mutex on \(self): \(result).")
-    }
-
-    deinit {
-        let result = pthread_mutex_destroy(&mutex)
-        precondition(result == 0, "Failed to destroy mutex on \(self): \(result).")
-    }
+    func lock()
+    func unlock()
 }
 
-public extension RetroObjectiveProxy {
-    class func initializer() {
+extension InitializerProtocol {
+    public static func initializer() {
         lock(); defer { unlock() }
 
         func collectSelectors(fromClass aClass: AnyClass) -> Set<Selector> {
@@ -48,36 +34,16 @@ public extension RetroObjectiveProxy {
         }
     }
 
-    final override func interceptedSelector(_ selector: Selector, arguments: [Any]) {
-        lock(); defer { unlock() }
-        receivables[selector]?.send(arguments: .init(arguments))
-    }
-
-    final override func responds(to aSelector: Selector!) -> Bool {
-        return super.responds(to: aSelector) || canResponds(to: aSelector)
-    }
-
-    final func receive(selector: Selector, receiver: Receivable) {
-        precondition(responds(to: selector), "\(type(of: self)) doesn't respond to selector \(selector).")
-        receivables[selector] = receiver
-    }
-
-    final func receive(selector: Selector, handler: @escaping (Arguments) -> Void) {
-        receive(selector: selector, receiver: Receiver(handler))
-    }
-}
-
-private extension RetroObjectiveProxy {
     static func classValue() -> NSValue {
         return .init(nonretainedObject: self)
     }
 
-    static func collectSelectors(fromProtocol `protocol`: Protocol) -> Set<Selector> {
+    static func collectSelectors(fromProtocol aProtocol: Protocol) -> Set<Selector> {
         var protocolMethodCount: UInt32 = 0
-        let methodDescriptions = protocol_copyMethodDescriptionList(`protocol`, false, true, &protocolMethodCount)
+        let methodDescriptions = protocol_copyMethodDescriptionList(aProtocol, false, true, &protocolMethodCount)
         defer { free(methodDescriptions) }
         var protocolsCount: UInt32 = 0
-        let protocols: AutoreleasingUnsafeMutablePointer<Protocol>? = protocol_copyProtocolList(`protocol`, &protocolsCount)
+        let protocols: AutoreleasingUnsafeMutablePointer<Protocol>? = protocol_copyProtocolList(aProtocol, &protocolsCount)
 
         let methodSelectors = (0..<protocolMethodCount)
             .compactMap { methodDescriptions?[Int($0)] }
@@ -111,13 +77,57 @@ private extension RetroObjectiveProxy {
         let result = objc_sync_exit(self)
         precondition(result == 0, "Failed to lock \(self): \(result).")
     }
+}
 
-    func lock() {
+open class RetroObjectiveProxy: DelegateProxy, InitializerProtocol {
+
+    internal static var classSelectors: [NSValue: Set<Selector>] = [:]
+
+    fileprivate var mutex = pthread_mutex_t()
+
+    fileprivate var receivables: [Selector: Receivable] = [:]
+
+    public required override init() {
+        super.init()
+        let result = pthread_mutex_init(&mutex, nil)
+        precondition(result == 0, "Failed ti initialize mutex on \(self): \(result).")
+        Self.initializer()
+    }
+
+    deinit {
+        let result = pthread_mutex_destroy(&mutex)
+        precondition(result == 0, "Failed to destroy mutex on \(self): \(result).")
+    }
+}
+
+public extension RetroObjectiveProxy {
+
+    final override func interceptedSelector(_ selector: Selector, arguments: [Any]) {
+        lock(); defer { unlock() }
+        receivables[selector]?.send(arguments: .init(arguments))
+    }
+
+    final override func responds(to aSelector: Selector!) -> Bool {
+        return super.responds(to: aSelector) || canResponds(to: aSelector)
+    }
+
+    final func receive(selector: Selector, receiver: Receivable) {
+        precondition(responds(to: selector), "\(type(of: self)) doesn't respond to selector \(selector).")
+        receivables[selector] = receiver
+    }
+
+    final func receive(selector: Selector, handler: @escaping (Arguments) -> Void) {
+        receive(selector: selector, receiver: Receiver(handler))
+    }
+}
+
+extension RetroObjectiveProxy {
+    internal func lock() {
         let result = pthread_mutex_lock(&mutex)
         precondition(result == 0, "Failed to lock \(self): \(result).")
     }
 
-    func unlock() {
+    internal func unlock() {
         let result = pthread_mutex_unlock(&mutex)
         precondition(result == 0, "Failed to unlock \(self): \(result).")
     }

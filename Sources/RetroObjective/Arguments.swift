@@ -17,7 +17,7 @@ public final class Arguments {
 
 public extension Arguments {
     func value(at index: Int) -> Any? {
-        guard index > 0 && index < list.count else { return nil }
+        guard list.count > index && index >= 0 else { return nil }
         return list[index]
     }
 

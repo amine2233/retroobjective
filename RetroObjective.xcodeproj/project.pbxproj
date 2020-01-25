@@ -240,9 +240,9 @@
 		67F5629223D6D5320070E964 /* RetroObjectiveTests */ = {
 			isa = PBXGroup;
 			children = (
-				6733187C23DACAA90018EC3D /* AssociatedRetroObjectiveTests.swift */,
 				6733187923DACAA90018EC3D /* RetroObjectiveTests-Bridging-Header.h */,
 				6733188023DACAC30018EC3D /* RetroObjective.swift */,
+				6733187C23DACAA90018EC3D /* AssociatedRetroObjectiveTests.swift */,
 				6732FE2423DAD1480019259F /* DelegateProxyTests.swift */,
 			);
 			path = RetroObjectiveTests;
