@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 		s.name 				= "RetroObjective"
-		s.version 			= "0.0.1"
+		s.version 			= "0.0.2"
 		s.summary         	= "Sort description of 'RetroObjective' framework"
 	    s.homepage        	= "https://github.com/amine2233/RetroObjective"
 	    s.license           = { type: 'MIT', file: 'LICENSE' }
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 	    s.watchos.deployment_target = '3.0'
 	    s.requires_arc = true
 	    s.source            = { :git => "https://github.com/amine2233/RetroObjective.git", :tag => s.version.to_s }
-	    s.source_files      = "Sources/**/*.swift"
+	    s.source_files      = "Sources/**/*.{h,m,swift}"
   		s.module_name = s.name
   		s.swift_version = "5.0"
   		s.pod_target_xcconfig = {
