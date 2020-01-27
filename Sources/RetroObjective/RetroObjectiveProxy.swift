@@ -47,7 +47,7 @@ extension InitializerProtocol {
 
         let methodSelectors = (0..<protocolMethodCount)
             .compactMap { methodDescriptions?[Int($0)] }
-            .filter(RO_isMethodReturnTypeVoid)
+            //.filter(RO_isMethodReturnTypeVoid)
             .compactMap { $0.name }
 
         let protocolSelectors = protocols.map { collectSelectors(fromProtocolPointer: $0, count: Int(protocolsCount)) } ?? []
@@ -87,6 +87,8 @@ open class RetroObjectiveProxy: DelegateProxy, InitializerProtocol {
 
     fileprivate var receivables: [Selector: Receivable] = [:]
 
+    fileprivate var receivablesValue: [Selector: ReceivableValue] = [:]
+
     public required override init() {
         super.init()
         let result = pthread_mutex_init(&mutex, nil)
@@ -116,8 +118,17 @@ public extension RetroObjectiveProxy {
         receivables[selector] = receiver
     }
 
+    final func receive(selector: Selector, receiver: ReceivableValue) {
+        precondition(responds(to: selector), "\(type(of: self)) doesn't respond to selector \(selector).")
+        receivablesValue[selector] = receiver
+    }
+
     final func receive(selector: Selector, handler: @escaping (Arguments) -> Void) {
         receive(selector: selector, receiver: Receiver(handler))
+    }
+
+    final func receive<Value>(selector: Selector, handler: @escaping (Arguments) -> Value) {
+        receive(selector: selector, receiver: ReceiverValue(handler))
     }
 }
 

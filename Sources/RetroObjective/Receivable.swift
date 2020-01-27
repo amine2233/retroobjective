@@ -18,3 +18,15 @@ public extension Receivable {
         return self
     }
 }
+
+public protocol ReceivableValue {
+    func send<Value>(arguments: Arguments) -> Value
+}
+
+public extension ReceivableValue {
+    @discardableResult
+    func subscribe(to proxy: RetroObjectiveProxy, selector: Selector) -> Self {
+        proxy.receive(selector: selector, receiver: self)
+        return self
+    }
+}

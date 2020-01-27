@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		670D42EC23DEC87B00CD1008 /* DelegateReturnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670D42EB23DEC87B00CD1008 /* DelegateReturnTests.swift */; };
+		670D42ED23DEC87B00CD1008 /* DelegateReturnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670D42EB23DEC87B00CD1008 /* DelegateReturnTests.swift */; };
+		670D42EE23DEC87B00CD1008 /* DelegateReturnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670D42EB23DEC87B00CD1008 /* DelegateReturnTests.swift */; };
 		6732FE2523DAD1480019259F /* DelegateProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6732FE2423DAD1480019259F /* DelegateProxyTests.swift */; };
 		6732FE2623DAD1480019259F /* DelegateProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6732FE2423DAD1480019259F /* DelegateProxyTests.swift */; };
 		6732FE2723DAD1480019259F /* DelegateProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6732FE2423DAD1480019259F /* DelegateProxyTests.swift */; };
@@ -86,6 +89,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		670D42EB23DEC87B00CD1008 /* DelegateReturnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateReturnTests.swift; sourceTree = "<group>"; };
 		6732FE2423DAD1480019259F /* DelegateProxyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxyTests.swift; sourceTree = "<group>"; };
 		6733187923DACAA90018EC3D /* RetroObjectiveTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetroObjectiveTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		6733187C23DACAA90018EC3D /* AssociatedRetroObjectiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedRetroObjectiveTests.swift; sourceTree = "<group>"; };
@@ -244,6 +248,7 @@
 				6733188023DACAC30018EC3D /* RetroObjective.swift */,
 				6733187C23DACAA90018EC3D /* AssociatedRetroObjectiveTests.swift */,
 				6732FE2423DAD1480019259F /* DelegateProxyTests.swift */,
+				670D42EB23DEC87B00CD1008 /* DelegateReturnTests.swift */,
 			);
 			path = RetroObjectiveTests;
 			sourceTree = "<group>";
@@ -556,6 +561,7 @@
 			files = (
 				6732FE2523DAD1480019259F /* DelegateProxyTests.swift in Sources */,
 				6733188123DACAC30018EC3D /* RetroObjective.swift in Sources */,
+				670D42EC23DEC87B00CD1008 /* DelegateReturnTests.swift in Sources */,
 				6733187D23DACAA90018EC3D /* AssociatedRetroObjectiveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +600,7 @@
 			files = (
 				6732FE2623DAD1480019259F /* DelegateProxyTests.swift in Sources */,
 				6733188223DACAC30018EC3D /* RetroObjective.swift in Sources */,
+				670D42ED23DEC87B00CD1008 /* DelegateReturnTests.swift in Sources */,
 				6733187E23DACAA90018EC3D /* AssociatedRetroObjectiveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,6 +625,7 @@
 			files = (
 				6732FE2723DAD1480019259F /* DelegateProxyTests.swift in Sources */,
 				6733188323DACAC30018EC3D /* RetroObjective.swift in Sources */,
+				670D42EE23DEC87B00CD1008 /* DelegateReturnTests.swift in Sources */,
 				6733187F23DACAA90018EC3D /* AssociatedRetroObjectiveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

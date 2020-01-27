@@ -60,3 +60,27 @@ extension DelegateTester {
         return TestDelegateProxy.proxy(for: self)
     }
 }
+
+@objc protocol TestReturnDelegate {
+    @objc optional func intValue(_ value: Int) -> Bool
+}
+
+final class TestReturn: NSObject {
+    weak var delegate: TestReturnDelegate?
+
+    func intValue(_ value: Int) -> Bool {
+        return delegate!.intValue!(value)
+    }
+}
+
+final class TestReturnDelegateProxy: RetroObjectiveProxy, TestReturnDelegate, RetroObjectiveProxyType {
+    func resetRetroObjectiveProxyType(owner: TestReturn) {
+        owner.delegate = self
+    }
+}
+
+extension TestReturn {
+    var delegateProxy: TestReturnDelegateProxy {
+        return TestReturnDelegateProxy.proxy(for: self)
+    }
+}
