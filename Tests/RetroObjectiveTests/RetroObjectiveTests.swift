@@ -6,9 +6,9 @@
 //
 
 import XCTest
-@testable import RetroObjective_iOS
+@testable import RetroObjective
 
-class RetroObjective_iOSTests: XCTestCase {
+class RetroObjectiveTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

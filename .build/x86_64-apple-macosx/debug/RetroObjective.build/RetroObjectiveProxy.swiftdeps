@@ -1,0 +1,441 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "InitializerProtocol"
+- "RetroObjectiveProxy"
+provides-nominal:
+- "14RetroObjective19InitializerProtocolP"
+- "14RetroObjective0aB5ProxyC"
+provides-member:
+- ["14RetroObjective19InitializerProtocolP", ""]
+- ["14RetroObjective0aB5ProxyC", ""]
+- ["14RetroObjective19InitializerProtocolP", "initializer"]
+- ["14RetroObjective19InitializerProtocolP", "classValue"]
+- ["14RetroObjective19InitializerProtocolP", "collectSelectors"]
+- ["14RetroObjective19InitializerProtocolP", "collectSelectors"]
+- ["14RetroObjective19InitializerProtocolP", "canResponds"]
+- ["14RetroObjective19InitializerProtocolP", "lock"]
+- ["14RetroObjective19InitializerProtocolP", "unlock"]
+- ["14RetroObjective0aB5ProxyC", "interceptedSelector"]
+- ["14RetroObjective0aB5ProxyC", "responds"]
+- ["14RetroObjective0aB5ProxyC", "receive"]
+- ["14RetroObjective0aB5ProxyC", "receive"]
+- ["14RetroObjective0aB5ProxyC", "lock"]
+- ["14RetroObjective0aB5ProxyC", "unlock"]
+provides-dynamic-lookup:
+- "classSelectors"
+- "interceptedSelector"
+- "lock"
+- "mutex"
+- "receivables"
+- "receive"
+- "responds"
+- "unlock"
+depends-top-level:
+- !private "!"
+- !private "..<"
+- !private "=="
+- !private "??"
+- !private "AnyClass"
+- "AnyObject"
+- "Arguments"
+- "AssignmentPrecedence"
+- "AutoreleasingUnsafeMutablePointer"
+- "Bool"
+- !private "BooleanLiteralType"
+- "DelegateProxy"
+- !private "FloatLiteralType"
+- "InitializerProtocol"
+- "Int"
+- !private "IntegerLiteralType"
+- "NSValue"
+- "Protocol"
+- !private "RO_isMethodReturnTypeVoid"
+- "Receivable"
+- !private "Receiver"
+- "RetroObjectiveProxy"
+- "Selector"
+- !private "Self"
+- "Set"
+- !private "StringLiteralType"
+- !private "UInt32"
+- !private "UnicodeScalarType"
+- "Void"
+- !private "class_copyProtocolList"
+- !private "class_getSuperclass"
+- !private "free"
+- !private "objc_sync_enter"
+- !private "objc_sync_exit"
+- !private "precondition"
+- !private "protocol_copyMethodDescriptionList"
+- !private "protocol_copyProtocolList"
+- !private "pthread_mutex_destroy"
+- !private "pthread_mutex_init"
+- !private "pthread_mutex_lock"
+- "pthread_mutex_t"
+- !private "pthread_mutex_unlock"
+- !private "type"
+- !private "||"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["14RetroObjective9ArgumentsC", "init"]
+- !private ["Sa", "filter"]
+- !private ["Sa", "map"]
+- !private ["Sa", "reduce"]
+- !private ["SA", "subscript"]
+- !private ["SK", "compactMap"]
+- !private ["SK", "filter"]
+- !private ["SK", "map"]
+- !private ["SK", "reduce"]
+- !private ["Sz", "init"]
+- !private ["s7CVarArgP", "contains"]
+- !private ["s7CVarArgP", "filter"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "reduce"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "union"]
+- !private ["Sl", "compactMap"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "filter"]
+- !private ["Sl", "init"]
+- !private ["Sl", "isEmpty"]
+- !private ["Sl", "map"]
+- !private ["Sl", "reduce"]
+- !private ["Sl", "subscript"]
+- !private ["Sl", "union"]
+- !private ["SL", "init"]
+- !private ["SL", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "filter"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["10Foundation15ContiguousBytesP", "reduce"]
+- !private ["s28CustomDebugStringConvertibleP", "compactMap"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "reduce"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "union"]
+- !private ["s17CustomReflectableP", "compactMap"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "reduce"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "union"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "compactMap"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "reduce"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "union"]
+- !private ["10Foundation12DataProtocolP", "filter"]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["10Foundation12DataProtocolP", "reduce"]
+- !private ["Se", "compactMap"]
+- !private ["Se", "contains"]
+- !private ["Se", "filter"]
+- !private ["Se", "init"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "map"]
+- !private ["Se", "reduce"]
+- !private ["Se", "subscript"]
+- !private ["Se", "union"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SD", "subscript"]
+- !private ["SE", "compactMap"]
+- !private ["SE", "contains"]
+- !private ["SE", "filter"]
+- !private ["SE", "init"]
+- !private ["SE", "isEmpty"]
+- !private ["SE", "map"]
+- !private ["SE", "reduce"]
+- !private ["SE", "subscript"]
+- !private ["SE", "union"]
+- !private ["SQ", "compactMap"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "filter"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "map"]
+- !private ["SQ", "reduce"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "union"]
+- !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s25ExpressibleByArrayLiteralP", "reduce"]
+- !private ["s25ExpressibleByArrayLiteralP", "union"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "map"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", "compactMap"]
+- !private ["SH", "contains"]
+- !private ["SH", "filter"]
+- !private ["SH", "init"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "map"]
+- !private ["SH", "reduce"]
+- !private ["SH", "subscript"]
+- !private ["SH", "union"]
+- !private ["14RetroObjective19InitializerProtocolP", "AnyClass"]
+- ["14RetroObjective19InitializerProtocolP", "AutoreleasingUnsafeMutablePointer"]
+- ["14RetroObjective19InitializerProtocolP", "Bool"]
+- ["14RetroObjective19InitializerProtocolP", "Int"]
+- ["14RetroObjective19InitializerProtocolP", "NSValue"]
+- ["14RetroObjective19InitializerProtocolP", "Protocol"]
+- !private ["14RetroObjective19InitializerProtocolP", "RO_isMethodReturnTypeVoid"]
+- !private ["14RetroObjective19InitializerProtocolP", "Receiver"]
+- ["14RetroObjective19InitializerProtocolP", "Selector"]
+- !private ["14RetroObjective19InitializerProtocolP", "Self"]
+- ["14RetroObjective19InitializerProtocolP", "Set"]
+- !private ["14RetroObjective19InitializerProtocolP", "UInt32"]
+- ["14RetroObjective19InitializerProtocolP", ""]
+- ["14RetroObjective19InitializerProtocolP", "canResponds"]
+- ["14RetroObjective19InitializerProtocolP", "classSelectors"]
+- ["14RetroObjective19InitializerProtocolP", "classValue"]
+- !private ["14RetroObjective19InitializerProtocolP", "class_copyProtocolList"]
+- !private ["14RetroObjective19InitializerProtocolP", "class_getSuperclass"]
+- ["14RetroObjective19InitializerProtocolP", "collectSelectors"]
+- !private ["14RetroObjective19InitializerProtocolP", "free"]
+- ["14RetroObjective19InitializerProtocolP", "initializer"]
+- ["14RetroObjective19InitializerProtocolP", "lock"]
+- !private ["14RetroObjective19InitializerProtocolP", "mutex"]
+- !private ["14RetroObjective19InitializerProtocolP", "objc_sync_enter"]
+- !private ["14RetroObjective19InitializerProtocolP", "objc_sync_exit"]
+- !private ["14RetroObjective19InitializerProtocolP", "precondition"]
+- !private ["14RetroObjective19InitializerProtocolP", "protocol_copyMethodDescriptionList"]
+- !private ["14RetroObjective19InitializerProtocolP", "protocol_copyProtocolList"]
+- !private ["14RetroObjective19InitializerProtocolP", "pthread_mutex_destroy"]
+- !private ["14RetroObjective19InitializerProtocolP", "pthread_mutex_init"]
+- !private ["14RetroObjective19InitializerProtocolP", "pthread_mutex_lock"]
+- ["14RetroObjective19InitializerProtocolP", "pthread_mutex_t"]
+- !private ["14RetroObjective19InitializerProtocolP", "pthread_mutex_unlock"]
+- !private ["14RetroObjective19InitializerProtocolP", "receivables"]
+- !private ["14RetroObjective19InitializerProtocolP", "receive"]
+- !private ["14RetroObjective19InitializerProtocolP", "responds"]
+- !private ["14RetroObjective19InitializerProtocolP", "type"]
+- ["14RetroObjective19InitializerProtocolP", "unlock"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "filter"]
+- !private ["SM", "map"]
+- !private ["SM", "reduce"]
+- !private ["10Foundation19MutableDataProtocolP", "filter"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "reduce"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So7NSValueC", "init"]
+- !private ["Sj", "init"]
+- !private ["Sq", "map"]
+- !private ["Sk", "compactMap"]
+- !private ["Sk", "filter"]
+- !private ["Sk", "map"]
+- !private ["Sk", "reduce"]
+- !private ["Sn", "compactMap"]
+- !private ["SX", "compactMap"]
+- !private ["Sm", "filter"]
+- !private ["Sm", "map"]
+- !private ["Sm", "reduce"]
+- !private ["14RetroObjective10ReceivableP", "init"]
+- !private ["14RetroObjective10ReceivableP", "send"]
+- !private ["14RetroObjective8ReceiverC", "deinit"]
+- !private ["14RetroObjective8ReceiverC", "init"]
+- ["14RetroObjective0aB5ProxyC", "Arguments"]
+- ["14RetroObjective0aB5ProxyC", "Bool"]
+- ["14RetroObjective0aB5ProxyC", "NSValue"]
+- ["14RetroObjective0aB5ProxyC", "Receivable"]
+- !private ["14RetroObjective0aB5ProxyC", "Receiver"]
+- ["14RetroObjective0aB5ProxyC", "Selector"]
+- !private ["14RetroObjective0aB5ProxyC", "Self"]
+- ["14RetroObjective0aB5ProxyC", "Set"]
+- ["14RetroObjective0aB5ProxyC", "Void"]
+- !private ["14RetroObjective0aB5ProxyC", "canResponds"]
+- ["14RetroObjective0aB5ProxyC", "classSelectors"]
+- ["14RetroObjective0aB5ProxyC", "deinit"]
+- ["14RetroObjective0aB5ProxyC", "init"]
+- !private ["14RetroObjective0aB5ProxyC", "initializer"]
+- ["14RetroObjective0aB5ProxyC", "interceptedSelector"]
+- ["14RetroObjective0aB5ProxyC", "lock"]
+- !private ["14RetroObjective0aB5ProxyC", "mutex"]
+- !private ["14RetroObjective0aB5ProxyC", "precondition"]
+- !private ["14RetroObjective0aB5ProxyC", "pthread_mutex_destroy"]
+- !private ["14RetroObjective0aB5ProxyC", "pthread_mutex_init"]
+- !private ["14RetroObjective0aB5ProxyC", "pthread_mutex_lock"]
+- ["14RetroObjective0aB5ProxyC", "pthread_mutex_t"]
+- !private ["14RetroObjective0aB5ProxyC", "pthread_mutex_unlock"]
+- !private ["14RetroObjective0aB5ProxyC", "receivables"]
+- ["14RetroObjective0aB5ProxyC", "receive"]
+- ["14RetroObjective0aB5ProxyC", "responds"]
+- !private ["14RetroObjective0aB5ProxyC", "type"]
+- ["14RetroObjective0aB5ProxyC", "unlock"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["ST", "compactMap"]
+- !private ["ST", "contains"]
+- !private ["ST", "filter"]
+- !private ["ST", "init"]
+- !private ["ST", "isEmpty"]
+- !private ["ST", "map"]
+- !private ["ST", "reduce"]
+- !private ["ST", "subscript"]
+- !private ["ST", "union"]
+- !private ["Sh", "contains"]
+- !private ["Sh", "init"]
+- !private ["Sh", "isEmpty"]
+- !private ["Sh", "union"]
+- !private ["s10SetAlgebraP", "contains"]
+- !private ["s10SetAlgebraP", "init"]
+- !private ["s10SetAlgebraP", "isEmpty"]
+- !private ["s10SetAlgebraP", "union"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["Sx", "subscript"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["Sp", "subscript"]
+- !private ["s14_ArrayProtocolP", "filter"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s14_ArrayProtocolP", "reduce"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s24_DestructorSafeContainerP", "reduce"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "filter"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s19_HasContiguousBytesP", "reduce"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reduce"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "union"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "contains"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "reduce"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "union"]
+- !private ["s8_PointerP", "subscript"]
+- ["So23_opaque_pthread_mutex_tV", "init"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "14RetroObjective9ArgumentsC"
+- !private "Sa"
+- !private "SA"
+- !private "SK"
+- !private "Sz"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SH"
+- "14RetroObjective19InitializerProtocolP"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So7NSValueC"
+- !private "Sj"
+- !private "Sq"
+- !private "Sk"
+- !private "Sn"
+- !private "SX"
+- !private "Sm"
+- !private "14RetroObjective10ReceivableP"
+- !private "14RetroObjective8ReceiverC"
+- "14RetroObjective0aB5ProxyC"
+- !private "s10SIMDScalarP"
+- !private "ST"
+- !private "Sh"
+- !private "s10SetAlgebraP"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "Sp"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s8_PointerP"
+- "So23_opaque_pthread_mutex_tV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/amine/Projects/github/retroobjective/.build/x86_64-apple-macosx/debug/RetroObjectiveCombine.build/module.modulemap"
+- "/Users/amine/Projects/github/retroobjective/.build/x86_64-apple-macosx/debug/RetroObjective.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "c51c42041cf1a5f6260148e874c152df"
