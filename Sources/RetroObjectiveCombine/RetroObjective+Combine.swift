@@ -17,7 +17,11 @@ extension Publishers {
         }
 
         public func receive<S>(subscriber: S) where S : Subscriber, Failure == S.Failure, Output == S.Input {
-
+            let subscription = SubscriptionRetroObjectiveProxy(
+                subscriber: subscriber,
+                delegate: delegate,
+                selector: selector)
+            subscriber.receive(subscription: subscription)
         }
     }
 }
