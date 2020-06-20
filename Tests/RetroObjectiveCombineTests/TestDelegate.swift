@@ -27,6 +27,12 @@ final class TestDelegateProxy: RetroObjectiveProxy, TestDelegate, RetroObjective
     public func resetRetroObjectiveProxyType(owner: DelegateTester) {
         owner.delegate = self
     }
+
+    var value: AnyPublisher<String, Never> {
+        Publishers.proxyDelegate(self, selector: #selector(TestDelegate.mockData(_:)))
+            .compactMap { $0.value(at: 0) as? String }
+            .eraseToAnyPublisher()
+    }
 }
 
 final class DelegateImplementedProxy: RetroObjectiveProxy, TestDelegate {

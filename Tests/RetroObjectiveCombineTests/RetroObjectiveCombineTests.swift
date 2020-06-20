@@ -44,4 +44,28 @@ class RetroObjectiveCombineTests: XCTestCase {
             XCTAssertEqual(expectationValue, stringTest)
         }
     }
+
+    func testOtherDelegatePublisher() {
+        var expectationValue: String?
+        let expectation = self.expectation(description: #function)
+        let delegateTester = DelegateTester()
+        let proxyDelegateTester = TestDelegateProxy.proxy(for: delegateTester)
+        proxyDelegateTester
+            .value
+            .sink { (value) in
+                expectationValue = value
+                expectation.fulfill()
+            }
+            .store(in: &disposeBag)
+
+        let stringTest = "send new element"
+        delegateTester.testDelegate(stringTest)
+
+        waitForExpectations(timeout: 1.0) { error in
+            if let error = error {
+                XCTFail(error.localizedDescription)
+            }
+            XCTAssertEqual(expectationValue, stringTest)
+        }
+    }
 }

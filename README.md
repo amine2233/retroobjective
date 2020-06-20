@@ -71,6 +71,19 @@ scrollView.delegateProxy
         print(scrollView.contentOffset)
 }
 ```
+## Basic Example with Combine
+
+You can add a new publisher on UIScrollView
+
+```Swift
+extension UISCrollView {
+    var value: AnyPublisher<UISCrollView, Never> {
+        Publishers.proxyDelegate(delegateProxy, selector: #selector(UIScrollViewDelegate.scrollViewDidScroll(_:)))
+            .compactMap { $0.value(at: 0) as? UISCrollView }
+            .eraseToAnyPublisher()
+    }
+}
+```
 
 ## Contribution  
 Welcome to fork and submit pull requests!!
