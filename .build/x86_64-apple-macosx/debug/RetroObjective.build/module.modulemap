@@ -1,4 +1,0 @@
-module RetroObjective {
-    header "/Users/amine/Projects/github/retroobjective/.build/x86_64-apple-macosx/debug/RetroObjective.build/RetroObjective-Swift.h"
-    requires objc
-}

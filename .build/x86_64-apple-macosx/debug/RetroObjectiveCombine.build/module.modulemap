@@ -1,4 +1,0 @@
-module RetroObjectiveCombine {
-    header "/Users/amine/Projects/github/retroobjective/.build/x86_64-apple-macosx/debug/RetroObjectiveCombine.build/RetroObjectiveCombine-Swift.h"
-    requires objc
-}
