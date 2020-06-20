@@ -12,6 +12,8 @@ import RetroObjective
 
 class RetroObjectiveCombineTests: XCTestCase {
 
+    var disposeBag = Set<AnyCancellable>()
+
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -20,57 +22,26 @@ class RetroObjectiveCombineTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testDelegatePublisher() {
         var expectationValue: String?
         let expectation = self.expectation(description: #function)
-        let mockClass = ConcretDelegateMock { value in
-            expectationValue = value
-            expectation.fulfill()
+        let delegateTester = DelegateTester()
+        delegateTester.combine
+            .value
+            .sink { (value) in
+                expectationValue = value
+                expectation.fulfill()
+            }
+            .store(in: &disposeBag)
+
+        let stringTest = "send new element"
+        delegateTester.testDelegate(stringTest)
+
+        waitForExpectations(timeout: 1.0) { error in
+            if let error = error {
+                XCTFail(error.localizedDescription)
+            }
+            XCTAssertEqual(expectationValue, stringTest)
         }
-
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-}
-
-@objc protocol DelegateMock: NSObjectProtocol {
-    @objc optional func mockData(give: String)
-}
-
-class MyDelegateMock: NSObject {
-    weak var delegate: DelegateMock?
-
-    init(delegate: DelegateMock?) {
-        self.delegate = delegate
-    }
-
-    func testDelegate(give: String) {
-        self.delegate?.mockData?(give: give)
-    }
-}
-
-class ConcretDelegateMock: NSObject, DelegateMock {
-    var myDelegateMock: MyDelegateMock?
-    var callback: ((String) -> Void)?
-    init(callback: ((String) -> Void)?) {
-        super.init()
-        self.callback = callback
-        self.myDelegateMock = MyDelegateMock(delegate: self)
-    }
-
-    func mockData(give: String) {
-        self.callback?(give)
-    }
-}
-
-final class DelegateMockProxy: RetroObjectiveProxy, DelegateMock, RetroObjectiveProxyType {
-
-    public func resetRetroObjectiveProxyType(owner: MyDelegateMock) {
-        owner.delegate = self
     }
 }
