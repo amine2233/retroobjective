@@ -11,8 +11,9 @@ Pod::Spec.new do |s|
 	    s.watchos.deployment_target = '3.0'
 	    s.requires_arc = true
 	    s.source            = { :git => "https://github.com/amine2233/RetroObjective.git", :tag => s.version.to_s }
-	    s.source_files      = "Sources/**/*.{h,m,swift}"
-  		s.module_name = s.name
+		s.source_files      = "Sources/**/*.{h,m,swift}"
+		s.exclude_files 	= "Sources/RetroObjective/Exports.swift"
+  		s.module_name 	= s.name
   		s.swift_version = "5.0"
   		s.pod_target_xcconfig = {
     		'SWIFT_VERSION' => s.swift_version.to_s
