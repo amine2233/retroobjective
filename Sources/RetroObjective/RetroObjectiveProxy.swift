@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol InitializerProtocol: class {
+protocol InitializerProtocol: AnyObject {
     static var classSelectors: [NSValue: Set<Selector>] { get set }
 
     func lock()

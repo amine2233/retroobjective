@@ -9,7 +9,7 @@ import Foundation
 
 private var associatedKey: UInt8 = 0
 
-public protocol RetroObjectiveProxyType: class {
+public protocol RetroObjectiveProxyType: AnyObject {
     associatedtype Owner
 
     func resetRetroObjectiveProxyType(owner: Owner)
